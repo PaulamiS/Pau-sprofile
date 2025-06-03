@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   font-family: "Protest Revolution", sans-serif;
   font-weight: 400;
   font-style: normal;
+  transition: background 0.3s, color 0.3s;
 }
 
 .navbar {
@@ -21,6 +23,7 @@ body {
   background: #fffde8;
   border-bottom: 1px solid #000;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -32,6 +35,7 @@ body {
   display: flex;
   gap: 1.5rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -78,6 +82,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 1rem;
+  transition: background-color 0.3s;
 }
 
 .social-icons {
@@ -85,6 +90,7 @@ body {
   display: flex;
   gap: 1rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .social-icons a {
@@ -95,7 +101,7 @@ body {
   padding: 0.5rem;
   border-radius: 50%;
   border: 2px solid #000;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background 0.3s;
 }
 
 .social-icons a:hover {
@@ -128,12 +134,14 @@ body {
   transform: rotate(-2deg);
   width: fit-content;
   margin: 0 auto;
+  transition: box-shadow 0.3s;
 }
 
 .pinned-photo img {
   display: block;
   border-radius: 6px;
   max-width: 260px;
+  height: auto;
 }
 
 .pin {
@@ -328,5 +336,15 @@ body.dark-mode #toggle-theme {
   .nav-links {
     flex-wrap: wrap;
     gap: 0.75rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+  }
+
+  .pinned-photo img {
+    max-width: 90vw;
   }
 }
