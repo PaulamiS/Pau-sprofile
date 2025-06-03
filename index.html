@@ -140,12 +140,46 @@
         box-shadow: 0 0 8px rgba(203, 156, 247, 0.6);
       }
     }
+
+    /* Dark Mode Styles */
+    body.dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    body.dark-mode .navbar,
+    body.dark-mode .nav-links,
+    body.dark-mode .about-section,
+    body.dark-mode .education-section,
+    body.dark-mode .skills-section,
+    body.dark-mode .contact-section {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+    }
+
+    body.dark-mode .nav-links a {
+      color: white;
+    }
+
+    body.dark-mode .nav-links a:hover {
+      color: rgb(203, 156, 247);
+    }
+
+    body.dark-mode input,
+    body.dark-mode textarea {
+      background-color: #222;
+      color: white;
+    }
+
+    body.dark-mode .cta {
+      background-color: rgb(203, 156, 247);
+    }
   </style>
 </head>
 <body style="background-image: url('p.jpeg');">
 
   <!-- Dark Mode Toggle -->
-  <button id="toggle-theme">Toggle Dark Mode</button>
+  <button id="toggle-theme" type="button">Toggle Dark Mode</button>
 
   <header class="navbar">
     <div class="logo">
@@ -180,7 +214,7 @@
     <div class="hero-image">
       <div class="image-card">
         <div class="pinned-photo">
-          <img src="PAulami.jpeg" alt="Student" />
+          <img src="Paulami.jpeg" alt="Student" />
           <div class="pin">📍</div>
           <div class="tape tl"></div>
           <div class="tape br"></div>
@@ -252,7 +286,7 @@
         <br><p><strong>Phone:</strong><br><a href="tel:+919883529949" style="color: black;">+91 98835 29949</a></p>
         <br><p><strong>Location:</strong><br>Kolkata, India</p>
       </div>
-      <form action="https://formspree.io/f/your-form-id" method="POST"
+      <form action="https://formspree.io/f/xwkzyzja" method="POST"
         style="flex: 1; min-width: 280px; max-width: 500px; display: flex; flex-direction: column; gap: 1rem;">
         <h3 style="color: black;">Send a Message</h3>
         <input type="text" name="name" placeholder="Your Name" required 
