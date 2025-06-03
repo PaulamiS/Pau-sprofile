@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Protest+Revolution&family=Syne:wght@400..800&display=swap');
 
-* {
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-body {
+  font-family: "Protest Revolution", sans-serif;
   background: #fefae0;
   color: #000;
-  font-family: "Protest Revolution", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   transition: background 0.3s, color 0.3s;
 }
 
@@ -50,6 +47,7 @@ body {
   justify-content: space-between;
   padding: 2rem;
   align-items: center;
+  width: 100%;
 }
 
 .hero-text {
@@ -132,17 +130,20 @@ body {
   border-radius: 12px;
   box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
   transform: rotate(-2deg);
-  width: fit-content;
+  width: 100%;
+  max-width: 90vw;
   margin: 0 auto;
+  box-sizing: border-box;
   transition: box-shadow 0.3s;
 }
 
 .pinned-photo img {
+  width: 100%;
+  height: auto;
   display: block;
   border-radius: 6px;
-  max-width: 260px;
-  height: auto;
 }
+
 
 .pin {
   position: absolute;
@@ -334,7 +335,6 @@ body.dark-mode #toggle-theme {
   }
 
   .nav-links {
-    flex-wrap: wrap;
     gap: 0.75rem;
     justify-content: center;
     margin-top: 1rem;
@@ -346,5 +346,10 @@ body.dark-mode #toggle-theme {
 
   .pinned-photo img {
     max-width: 90vw;
+  }
+
+  .timeline {
+    margin-left: 1rem;
+    padding-left: 1rem;
   }
 }
