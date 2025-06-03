@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Protest+Revolution&family=Syne:wght@400..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fefae0;
+  color: #000;
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #fffde8;
+  border-bottom: 1px solid #000;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  padding: 0.5rem;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #b494f3;
+  font-weight: bold;
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+  font-size: 1rem;
+}
+
+.cta {
+  background-color: #aaf93e;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border: 3px dotted #000;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000;
+  background: #fefae0;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #000;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 1rem;
+}
+
+.image-card {
+  background: #d8c5ff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.pinned-photo {
+  position: relative;
+  background: #fff;
+  padding: 1rem;
+  border: 2px solid #000;
+  border-radius: 12px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
+  transform: rotate(-2deg);
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.pinned-photo img {
+  display: block;
+  border-radius: 6px;
+  max-width: 260px;
+}
+
+.pin {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.tape {
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  opacity: 0.85;
+  z-index: 3;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border: 1px dashed #000;
+}
+
+.tape.tl {
+  top: -10px;
+  left: -10px;
+  transform: rotate(-45deg);
+  background-color: #f4a261;
+}
+
+.tape.br {
+  bottom: -10px;
+  right: -10px;
+  transform: rotate(-45deg);
+  background-color: #aaf93e;
+}
+
+.about-section, .education-section, .skills-section {
+  padding: 2rem;
+  background: #fffde8;
+  border-top: 2px dashed #000;
+  border-bottom: 2px dashed #000;
+  margin-top: 2rem;
+}
+
+.about-section h2, .education-section h2, .skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p, .education-section p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 2rem;
+  padding-left: 2rem;
+  border-left: 4px dotted #000;
+}
+
+.timeline-entry {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-entry::before {
+  content: '';
+  position: absolute;
+  left: -34px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: #c7b8f7;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.timeline-entry h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-entry p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-item {
+  padding: 0.6rem 1rem;
+  background-color: #fffde8;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0 #000;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: inherit;
+}
+
+.skill-item:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .about-section,
+body.dark-mode .hero-text,
+body.dark-mode .image-card,
+body.dark-mode .pinned-photo,
+body.dark-mode .education-section,
+body.dark-mode .skills-section {
+  background-color: #1e1e1e;
+  border-color: #444;
+  color: #fff;
+}
+
+body.dark-mode .cta,
+body.dark-mode .social-icons a,
+body.dark-mode .tape {
+  background-color: #292929;
+  color: #f1f1f1;
+  border-color: #f1f1f1;
+}
+
+body.dark-mode .tape.tl {
+  background-color: #bb86fc;
+}
+
+body.dark-mode .tape.br {
+  background-color: #03dac5;
+}
+
+body.dark-mode .timeline {
+  border-color: #bbb;
+}
+
+body.dark-mode .timeline-entry p {
+  color: #ddd;
+}
+
+body.dark-mode .skill-item {
+  background-color: #292929;
+  color: #f1f1f1;
+  border-color: #f1f1f1;
+  box-shadow: 3px 3px 0 #f1f1f1;
+}
+
+#toggle-theme {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background: #fffde8;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+body.dark-mode #toggle-theme {
+  background: #292929;
+  color: #fff;
+  border-color: #fff;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding: 0;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}
