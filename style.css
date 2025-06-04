@@ -353,3 +353,25 @@ body.dark-mode #toggle-theme {
     padding-left: 1rem;
   }
 }
+
+.hero-section {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 600px; /* Adjust based on your design */
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 768px) {
+  .hero-image {
+    max-width: 90%;
+    object-fit: contain;
+  }
+}
